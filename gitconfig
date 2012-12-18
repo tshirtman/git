@@ -1,0 +1,37 @@
+[user]
+	name = tshirtman
+	email = gabriel.pettier@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	sl = log --stat
+	gl = log --graph --pretty=format:\"%C(yellow)%h%C(red)%d%Creset %s\"
+	gla = log --graph --pretty=format:\"%C(yellow)%h%C(red)%d%Creset %s\" --all
+	ll = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ci%C(green) %an %C(red)%d %Creset%s\"
+	lla = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ci%C(green) %an %C(red)%d %Creset%s\" --all
+	in = !git ll ..origin
+
+	d = diff --patience -B -C
+	sd = diff --patience -B -C --staged
+	wd = diff --color-words --patience -B -C
+	ws = show --color-words
+	hgp = show --format=\"From: %an <%ae>%n%s%n%b\" -U8
+	branch-diff = !git diff $(git merge-base HEAD master) $1
+
+[core]
+	editor = vim
+
+[tool]
+	diff = vimdiff
+[push]
+	default = tracking
+[github]
+	user = tshirtman
+	username = tshirtman
