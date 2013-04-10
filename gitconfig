@@ -7,7 +7,7 @@
 	interactive = auto
 	status = auto
 [alias]
-	st = status
+	st = status --short
 	ci = commit
 	co = checkout
 	br = branch
@@ -24,6 +24,13 @@
 	ws = show --color-words
 	hgp = show --format=\"From: %an <%ae>%n%s%n%b\" -U8
 	branch-diff = !git diff $(git merge-base HEAD master) $1
+	pull = pull --rebase
+	df = diff
+	nopushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+	nomerged = branch -a --no-merged
+	latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'
+	newalias = config --global
+	ds = diff --staged
 
 [core]
 	editor = vim
