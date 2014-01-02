@@ -1,6 +1,6 @@
 [user]
-	name = tshirtman
-	email = gabriel.pettier@gmail.com
+	name = Gabriel Pettier
+	email = gabriel.pettier@cloudwatt.com
 [color]
 	branch = auto
 	diff = auto
@@ -40,7 +40,7 @@
 [tool]
 	diff = vimdiff
 [push]
-	default = tracking
+	default = matching
 [github]
 	user = tshirtman
 	username = tshirtman
