@@ -44,3 +44,5 @@
 [github]
 	user = tshirtman
 	username = tshirtman
+[init]
+	templatedir = ~/.git/template/
