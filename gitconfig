@@ -32,6 +32,7 @@
 	newalias = config --global
 	ds = diff --staged
 	rc = rebase --continue
+	ca = commit --amend
 
 [core]
 	editor = vim

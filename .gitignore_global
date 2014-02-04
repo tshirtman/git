@@ -1,5 +1,7 @@
 *.swo
 *.swp
 *.un~
+*.egg
 .pyo
 .pyc
+localrc
