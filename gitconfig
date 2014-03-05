@@ -6,6 +6,10 @@
 	diff = auto
 	interactive = auto
 	status = auto
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [alias]
 	st = status --short
 	ci = commit
@@ -41,7 +45,7 @@
 [tool]
 	diff = vimdiff
 [push]
-	default = matching
+	default = tracking
 [github]
 	user = tshirtman
 	username = tshirtman
