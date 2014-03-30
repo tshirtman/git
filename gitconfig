@@ -32,6 +32,9 @@
 	newalias = config --global
 	ds = diff --staged
 	rc = rebase --continue
+	cstatus = -c color.status=always status --short
+	bc = branch --color -v
+	pp = !git pull --rebase  && git push
 
 [core]
 	editor = vim
@@ -46,3 +49,5 @@
 	username = tshirtman
 [init]
 	templatedir = ~/.git/template/
+[diff]
+	algorithm = patience
