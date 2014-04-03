@@ -14,7 +14,7 @@
 	sl = log --stat
 	gl = log --graph --pretty=format:\"%C(yellow)%h%C(red)%d%Creset %s\"
 	gla = log --graph --pretty=format:\"%C(yellow)%h%C(red)%d%Creset %s\" --all
-	ll = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ci%C(green) %an %C(red)%d %Creset%s\"
+	ll = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%cd%C(green) %an %C(red)%d %Creset%s\"
 	lla = log --graph --pretty=format:\"%C(yellow)%h %C(blue)%ci%C(green) %an %C(red)%d %Creset%s\" --all
 	in = !git ll ..origin
 
