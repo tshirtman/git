@@ -35,6 +35,7 @@
 	cstatus = -c color.status=always status --short
 	bc = branch --color -v
 	pp = !git pull --rebase  && git push
+	monitor = !watch -tc 'git -c color.status=always st&&echo&&git br -a&&echo&& git ll --date short&& echo && echo &&git reflog --color|head -n 15'
 
 [core]
 	editor = vim
