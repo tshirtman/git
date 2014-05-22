@@ -1,6 +1,6 @@
 [user]
-	name = tshirtman
-	email = gabriel.pettier@gmail.com
+	name = gabriel pettier
+	email = dev@tangibledisplay.com
 [color]
 	branch = auto
 	diff = auto
@@ -35,7 +35,7 @@
 	cstatus = -c color.status=always status --short
 	bc = branch --color -v
 	pp = !git pull --rebase  && git push
-	monitor = !watch -tc 'git -c color.status=always st&&echo&&git br -a&&echo&& git ll --date short&& echo && echo &&git reflog --color|head -n 15'
+	monitor = !watch -tc 'git -c color.status=always st&&echo&&git log @{u}..HEAD --graph --decorate --boundary --oneline --color && echo && git br && echo && git reflog --color|head -n 15 && echo && git ll --date short&& git fetch'
 	slog = log --pretty=format:"%C(auto,yellow)%h%C(auto)%d\\ %C(auto,reset)%s\\ \\ [%C(auto,blue)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)]"
 	addprx = "!f() { b=`git symbolic-ref -q --short HEAD` && \
 		git fetch origin pull/$1/head:pr/$1 && \
