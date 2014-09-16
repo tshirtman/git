@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+mkdir -p ~/commit-pictures
+set project $(git remote show origin -n|grep .git|head -n 1|sed -s 's/.*\///'| sed -s 's/.git//')
+fswebcam --png --save ~/commit-pictures/$(date +%Y-%m-%d-%H:%M:%S)-$(project).png --frames 5
+exit 0
