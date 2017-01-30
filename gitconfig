@@ -1,6 +1,6 @@
 [user]
-	name = gabriel pettier
-	email = dev@tangibledisplay.com
+	name = Gabriel Pettier
+	email = gabriel@tangibledisplay.com
 [color]
 	branch = auto
 	diff = auto
@@ -46,6 +46,8 @@
 		git diff --stat $b..pr/$1 && echo && \
 		git slog $b..pr/$1; }; f"
 	pr = "!git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1"
+	puff = push -f
+	purr = pull -r
 
 [core]
 	editor = vim
