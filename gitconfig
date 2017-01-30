@@ -45,6 +45,7 @@
 		git checkout $b && echo && \
 		git diff --stat $b..pr/$1 && echo && \
 		git slog $b..pr/$1; }; f"
+	pr = "!git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1"
 
 [core]
 	editor = vim
@@ -61,3 +62,8 @@
 	templatedir = ~/.git/template/
 [diff]
 	algorithm = patience
+	indentHeuristic = true
+[rebase]
+	autostash = true
+[commit]
+	verbose = true
