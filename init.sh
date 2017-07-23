@@ -19,4 +19,13 @@ case $yn in
 	[Nn]*) break;;
 	*) echo "please answer yes or no";;
 esac
+
+while true
+do
+read -p "do you want to install git-extras ? (Y/N)" yn
+case $yn in
+		[Yy]*) sudo apt install git-extras; break;;
+	[Nn]*) break;;
+	*) echo "please answer yes or no";;
+esac
 done
