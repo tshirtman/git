@@ -35,7 +35,7 @@
 	cstatus = -c color.status=always status --short
 	bc = branch --color -v
 	pp = !git pull --rebase  && git push
-	monitor = !watch -tc 'git -c color.status=always st&&echo&&git log @{u}..HEAD --graph --decorate --boundary --oneline --color && echo && git br && echo && git reflog --color|head -n 15 && echo && git ll --date short&& git fetch'
+	monitor = !watch -tc 'git -c color.status=always --no-optional-locks st&&echo&&git log @{u}..HEAD --graph --decorate --boundary --oneline --color && echo && git br && echo && git reflog --color|head -n 15 && echo && git ll --date short&& git fetch'
 	slog = log --pretty=format:"%C(auto,yellow)%h%C(auto)%d\\ %C(auto,reset)%s\\ \\ [%C(auto,blue)%cn%C(auto,reset),\\ %C(auto,cyan)%ar%C(auto,reset)]"
 	addprx = "!f() { b=`git symbolic-ref -q --short HEAD` && \
 		git fetch origin pull/$1/head:pr/$1 && \
@@ -48,6 +48,17 @@
 	pr = "!git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1"
 	puff = push -f
 	purr = pull -r
+	f = fetch
+	p = pull
+	ps = push
+	pf = push --force
+	rb = rebase
+	pub = push -u origin HEAD
+	rs = reset
+	bs = bisect
+	cop = checkout -p
+	rbm = rebase origin/master
+	ca = commit --amend
 
 [core]
 	editor = vim

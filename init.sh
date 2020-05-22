@@ -19,6 +19,7 @@ case $yn in
 	[Nn]*) break;;
 	*) echo "please answer yes or no";;
 esac
+done
 
 while true
 do
