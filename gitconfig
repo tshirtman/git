@@ -1,6 +1,6 @@
 [user]
 	name = Gabriel Pettier
-	email = gabriel@tangibledisplay.com
+	email = gabriel.pettier@.imc.com
 [color]
 	branch = auto
 	diff = auto
@@ -57,6 +57,7 @@
 	cop = checkout -p
 	rbm = rebase origin/master
 	ca = commit --amend
+	ap = add -p
 
 [core]
 	editor = vim
